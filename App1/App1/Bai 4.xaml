@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Bai_4">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <Label Text="Form dang ky" FontSize="Large" TextColor="#000"
+               Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+            <Image Source="uit.png" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+            <Label Text="Name:" FontSize="Large" TextColor="Blue" FontAttributes="Bold" VerticalOptions="Center" Grid.Row="2" Grid.Column="0"/>
+            <Entry  x:Name="txtname" Placeholder="Enter Your Name" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="Email:" FontSize="Large" TextColor="Blue" FontAttributes="Bold" VerticalOptions="Center" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="txtemail" Placeholder="Enter Your Email" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="1" Keyboard="Email"/>
+            <Label Text="Birthday:" FontSize="Large" TextColor="Blue" FontAttributes="Bold" VerticalOptions="Center" Grid.Row="4" Grid.Column="0"/>
+            <DatePicker x:Name="dpBirthday" VerticalOptions="Center" Grid.Row="4" Grid.Column="1"/>
+            <Label Text="Male? :" FontSize="Large" TextColor="Blue" FontAttributes="Bold" VerticalOptions="Center" Grid.Row="5" Grid.Column="0" HorizontalOptions="Start"/>
+            <Switch x:Name="SwtGender" IsToggled="False" Grid.Row="5" Grid.Column="1" HorizontalOptions="Start" />
+            <Label x:Name="ageSliderLabel" Text="Age: " FontSize="Large" TextColor="Blue" VerticalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="0" FontAttributes="Bold" />
+            <Slider x:Name="ageSlider" Minimum="0" Maximum="100" Grid.Row="6" Grid.Column="1" ValueChanged="ageSlider_ValueChanged"/>
+            <Button x:Name="btnSubmit" Text="SUBMIT" Grid.Row="7" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Clicked="btnSubmit_Clicked"/>
+            <Button x:Name="btnCancel" Text="CANCEL" Grid.Row="7" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" Clicked="btnCancel_Clicked"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

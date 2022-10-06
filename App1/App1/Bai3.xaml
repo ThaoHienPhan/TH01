@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Bai3">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Welcome to
+                       Xamarin.Forms" FontSize="Large"/>
+            <Entry x:Name="txtname" Placeholder="Name" Margin="15, 0, 0, 0"/>
+            <Entry x:Name="txtemail" Placeholder="Email" Margin="15, 0, 0, 0"/>
+            <Entry x:Name="txtphone" Placeholder="Phone Number" Margin="15, 0, 0, 0"/>
+            <Entry x:Name="txtconfirm" Placeholder="Confirm Password" Margin="15, 0, 0, 0" IsPassword="True"/>
+            <Entry x:Name="txtpass" Placeholder="Password" Margin="15, 0, 0, 0" IsPassword="True"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
